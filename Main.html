@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.image {
+  margin: 35;
+}
+</style>
+</head>
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Electronic Appliance Name.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<!-- Control buttons -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Filters:</button>
+  <button class="btn" onclick="filterSelection('Rating')"> Rating: 4.0+</button>
+  <button class="btn" onclick="filterSelection('Animals')"> Safe and Hygienic</button>
+  <button class="btn" onclick="filterSelection('FastService')"> Fastest Service</button>
+</div>
+<p></p>
+<img src="https://t4.ftcdn.net/jpg/03/74/16/67/360_F_374166751_jDKHstVT8jt3IQBEZGfAhaEOHsyYMuBw.jpg" alt="Avatar" style="width:200px">
+<p style="text-align:center;">Consumer privacy is of utmost importance</p>
+<div class="image">
+	<img src="https://happysale.in/hs/img/c/electronics.jpeg" style="float:left" >
+</div>
+<h1>Flat 60% off on first order for repairs</h1>
+<p>Collaborating with the best companies that put consumer satisfaction as top priority</p>
+</html>

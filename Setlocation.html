@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #92a8d1;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h1 {text-align: center;}
+</style>
+</head>
+<form action="action_page.php">
+  <div class="container">
+    <h1>Hi, nice to meet you!</h1>
+    <img src="https://www.languagecoursesuk.co.uk/wp-content/uploads/2020/06/Hello-in-different-languages-1024x683.jpg" alt="Hello Image" width=400 height=300 class="center">
+    <p style="text-align:center;">Set your location to start exploring</p>
+    <p style="text-align:center;">repair services around you</p>
+    <hr>
+
+    
+    <button type="submit" class="registerbtn">Use current location</button>
+  </div>
+
+  <div class="container signin">
+    <p>Set location manually? <a href="https://www.google.com/maps/@20.9880135,82.7525294,5z">Click here</a>.</p>
+  </div>
+</form>
+</html>
